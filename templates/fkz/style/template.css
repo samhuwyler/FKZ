@@ -1,0 +1,317 @@
+
+@font-face {
+    font-family: Quicksand_Book;
+    src: url(fonts/Quicksand_Book.otf);
+}
+
+@font-face {
+    font-family: Quicksand_Light;
+    src: url(fonts/Quicksand_Light.otf);
+}
+
+@font-face {
+    font-family: AppleGara;
+    src: url(fonts/AppleGaramond.ttf);
+}
+
+@font-face {
+    font-family: AppleGara_Light;
+    src: url(fonts/AppleGaramond-Light.ttf);
+}
+
+@font-face {
+    font-family: Helvetica_Light;
+    src: url(fonts/helvetica-light.ttf);
+}
+
+body
+{
+	padding: 0px;
+	margin: 0px;
+    font-family: Helvetica_Light, sans-serif;
+    background: #fff;
+    overflow-x: hidden;
+    color: #222;
+    font-size:14pt;
+}
+
+h1
+{
+    font-family: AppleGara;
+}
+
+h2
+{
+    font-size:25pt;
+    font-family: AppleGara;
+    color: #003366;
+    margin-bottom: -10px;
+}
+
+fieldset
+{
+    border: none;
+}
+
+
+#top
+{
+	width: 100vw;
+	height: 100px;
+	background-image: url(../images/top.jpg);
+	margin: 0px;
+    min-width: 475px;
+    position: fixed;
+    background-position: 0 90%;
+    z-index: 1000;
+    
+    -webkit-transition: padding-top .75s;
+    transition: padding-top .75s;
+}
+
+.virgin-view-top
+{
+    padding-top: 80px;
+}
+
+.image-view
+{
+    padding-top: calc(100vh - 100px);
+    background-size:cover;
+
+}
+
+#title
+{
+    font-family: AppleGara_Light;
+    font-size: 40pt;
+    color: white;
+    margin-left: calc(20vw - 20px);
+    padding-top: 30px;
+}
+
+.menu
+{
+	margin: 0px;
+    font-family: Quicksand_Light, sans-serif;
+    font-size: 18pt;
+    width: 385px;
+    height: 10px;
+    right: calc(20vw - 20px);
+    padding: 0px;
+    position: absolute;
+    margin-top: -40px;
+}
+
+.menu li
+{
+	float: left;
+    list-style: none;
+    padding-bottom: 1px;
+    padding-left: 35px;
+    margin-top: 5px;
+}
+
+.menu li :hover
+{
+    font-family: Quicksand_Book;
+    color: black;
+    background: white;;
+}
+
+.menu li :active
+{
+    font-family: Quicksand_Book;
+    color: black;
+    background: white;;
+}
+
+.menu li a 
+{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+.current a
+{
+    font-family: Quicksand_Book;
+    color: black !important;
+    background: white;;
+}
+
+#container
+{
+    margin-left: calc(20vw - 20px);
+    width: 60vw;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 50px;
+    padding-top: 90px;
+    background: #fff;
+    min-width: 475px;
+    text-align: justify;
+    z-index: 900;
+   
+    -webkit-box-shadow: 0 0 50px -5px #757575;
+    box-shadow: 0 0 50px -5px #757575;
+    
+    -webkit-transition: padding-top .75s; /* Safari */
+    transition: padding-top .75s;
+}
+
+.virgin-view-cont
+{
+    padding-top: 170px !important;
+}
+
+#footer
+{
+    width: 100vw;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top: 1px solid #fff;
+}
+
+.login
+{
+    margin-top: 50px;
+}
+
+#editor
+{
+    margin-top: 85px;
+}
+
+.edit
+{
+    padding-top:20px;
+}
+
+.edit-icon
+{
+    list-style: outside none none;
+    text-transform: lowercase;
+    float: right;
+    margin-top: -40px;
+}
+
+.edit-icon a
+{
+    text-decoration: none;
+    color: #888;
+}
+
+.btn
+{
+    background-color:rgb(60, 95, 201);
+    border: medium none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 7px;
+}
+
+#jform_title
+{
+    margin-bottom: 10px;
+    height: 30px;
+    font-size: 20pt;
+}
+.btn-group
+{
+    float: left;
+    padding-right: 10px;
+}
+
+.nav-tabs
+{
+    display: none;
+}
+
+.btn-group:last-child
+{
+    float:none;
+}
+
+.dropdown-toggle
+{
+    display: none;
+}
+
+#publishing > .control-group, #language, #metadata
+{
+    display: none;
+}
+
+#publishing > .control-group:nth-child(1), #publishing > .control-group:nth-child(6)
+{
+    display: inherit;
+    float: left;
+    margin-right: 5px;
+}
+
+#editor .control-group:nth-child(1)
+{
+    margin-top: -75px;
+}
+
+#jform_featured_chzn
+{
+    width:75px !important;    
+}
+
+.contact > h3
+{
+    display: none;
+}
+
+@media only screen and (max-width: 1290px) 
+{
+    #title
+    {
+        margin-left: 20px; 
+    }
+    
+    #container
+    {
+        margin-left: 0px;
+        width: calc(100vw - 40px);
+    }
+    
+    .menu
+    {
+        right: 20px;
+    }
+}
+
+@media only screen and (max-width: 860px) 
+{
+    #top
+    {
+        height: 95px;
+    }
+    
+    .menu
+    {
+        position: relative;
+        right: 20px;
+        top: -6px;
+        margin-left: 10px;
+    }
+    
+    #container
+    {
+        padding-top: 95px;
+    }
+    
+    body
+    {
+        overflow-x: auto;
+    }
+}

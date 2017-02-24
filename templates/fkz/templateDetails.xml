@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.6.5" type="template">
+	<name>Fotografie Kollektiv Template</name>
+	<creationDate>2017-02-22</creationDate>
+	<author>Samuel Huwyler</author>
+	<authorEmail>sam@huwyler.ch</authorEmail>
+	<authorUrl>http://www.huwyler.ch</authorUrl>
+	<copyright>Fotografie Kollektiv Zug 2017</copyright>
+	<license>GNU/GPL</license>
+	<version>1.0</version>
+	<description>Template for Fotografie Kollektiv</description>
+	<files>
+		<filename>index.php</filename>
+		<filename>templateDetails.xml</filename>
+		<folder>images</folder>
+		<folder>style</folder>
+	</files>
+	<positions>	
+		<position>left</position>
+		<position>right</position>
+		<position>header</position>
+		<position>top</position>
+		<position>user1</position>
+		<position>user2</position>
+		<position>user3</position>
+		<position>user4</position>
+		<position>footer</position>
+	</positions>
+</extension>
